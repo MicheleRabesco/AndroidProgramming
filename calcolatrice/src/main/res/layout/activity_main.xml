@@ -28,18 +28,16 @@
                 android:layout_marginTop="60dp"
                 android:background="#456789"
                 android:gravity="right"
-                android:hint="1+1"
                 android:text=""
                 android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/resultDisplay"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="30dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="0dp"
                 android:background="#456789"
                 android:gravity="right"
-                android:hint="2"
                 android:text=""
                 android:textSize="20sp" />
 
@@ -47,22 +45,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="25dp">
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#fffaaa"
+                    android:layout_height="50dp"
+                    android:background="#456789"
                     android:text="Memory:"
                     android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/memoryDisplay"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#fffaaa"
+                    android:layout_height="50dp"
+                    android:background="#456789"
                     android:gravity="right"
-                    android:hint="memory output"
+                    android:text=""
                     android:textSize="20sp" />
 
             </LinearLayout>
@@ -98,7 +97,7 @@
                         android:layout_gravity="fill"
                         android:layout_marginLeft="10sp"
                         android:text="MC"
-                        android:textSize="10dp" />
+                        android:textSize="9dp" />
 
                     <Button
                         android:id="@+id/memorySave"
@@ -109,7 +108,7 @@
                         android:layout_gravity="fill"
                         android:layout_marginLeft="10sp"
                         android:text="MS"
-                        android:textSize="10dp" />
+                        android:textSize="9dp" />
 
                     <Button
                         android:id="@+id/memoryRecall"
@@ -120,7 +119,7 @@
                         android:layout_gravity="fill"
                         android:layout_marginLeft="10sp"
                         android:text="MR"
-                        android:textSize="10dp" />
+                        android:textSize="9dp" />
 
                     <Button
                         android:id="@+id/subtract"
