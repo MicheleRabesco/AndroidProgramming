@@ -314,6 +314,13 @@
                 </GridLayout>
             </LinearLayout>
 
+            <Button
+                android:id="@+id/cambia_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sendMessage"
+                android:text="cambia activity" />
+
         </LinearLayout>
     </LinearLayout>
 

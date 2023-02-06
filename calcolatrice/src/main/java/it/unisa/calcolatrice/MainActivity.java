@@ -2,6 +2,7 @@ package it.unisa.calcolatrice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,26 +17,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView operationDisplay;
     private TextView resultDisplay;
     private TextView memoryDisplay;
-    private Button clear;
-    private Button memoryClear;
-    private Button memorySave;
-    private Button memoryRecall;
-    private Button subtract;
-    private Button sum;
-    private Button multi;
-    private Button divide;
-    private Button n1;
-    private Button n2;
-    private Button n3;
-    private Button n4;
-    private Button n5;
-    private Button n6;
-    private Button n7;
-    private Button n8;
-    private Button n9;
-    private Button n0;
-    private Button dot;
-    private Button equal;
 
     private Boolean equalJustPressed = false;
 
@@ -64,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.divide).setOnClickListener(this);
         findViewById(R.id.equal).setOnClickListener(this);
         findViewById(R.id.clear).setOnClickListener(this);
-
+        findViewById(R.id.cambia_activity).setOnClickListener(this);
     }
 
     public void onClick(View v) {
@@ -118,6 +99,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 operationDisplay.setText("");
                 resultDisplay.setText("");
                 break;
+            case R.id.cambia_activity:
+                sendMessage(v);
 
         }
         /*
@@ -181,5 +164,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
         super.onPointerCaptureChanged(hasCapture);
+    }
+
+    public void sendMessage(View view) {
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
     }
 }
