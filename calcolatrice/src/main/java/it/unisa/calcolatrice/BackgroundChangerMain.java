@@ -1,11 +1,11 @@
 package it.unisa.calcolatrice;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,7 +20,6 @@ public class BackgroundChangerMain extends AppCompatActivity implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.background_changer);
 
-        findViewById(R.id.cambia_activity).setOnClickListener(this);
         findViewById(R.id.sfondoTesto).setOnClickListener(this);
         findViewById(R.id.sfondoApp).setOnClickListener(this);
         text = findViewById(R.id.text);
@@ -35,13 +34,21 @@ public class BackgroundChangerMain extends AppCompatActivity implements View.OnC
         switch (v.getId()){
             case R.id.sfondoApp:
                 extLayout.setBackgroundColor(Color.rgb(r,g,b));
+                toastMsg();
                 break;
             case R.id.sfondoTesto:
                 text.setBackgroundColor(Color.rgb(r,g,b));
+                toastMsg();
                 break;
-            case R.id.cambia_activity:
 
         }
     }
+
+    public void toastMsg() {
+        Toast toast = Toast.makeText(this, "Cambiando colore..", Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+
 
 }
