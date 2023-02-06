@@ -50,6 +50,17 @@
             android:onClick="pressedButton2"
             />
 
+        <Button
+            android:id="@+id/cambia_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sfondoApp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#87ec78"
+            android:text="Cambia activity"
+            android:textSize="12sp"
+            android:onClick="changeActivity" />
+
 
     </RelativeLayout>
 

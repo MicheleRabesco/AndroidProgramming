@@ -318,7 +318,7 @@
                 android:id="@+id/cambia_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="sendMessage"
+                android:onClick="changeActivity"
                 android:text="cambia activity" />
 
         </LinearLayout>

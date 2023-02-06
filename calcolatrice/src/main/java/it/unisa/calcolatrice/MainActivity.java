@@ -8,11 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Map;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView operationDisplay;
     private TextView resultDisplay;
@@ -100,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 resultDisplay.setText("");
                 break;
             case R.id.cambia_activity:
-                sendMessage(v);
+                changeActivity(v);
 
         }
         /*
@@ -166,8 +161,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onPointerCaptureChanged(hasCapture);
     }
 
-    public void sendMessage(View view) {
-        Intent intent = new Intent(this, SecondActivity.class);
+    public void changeActivity(View view) {
+        Intent intent = new Intent(this, BackgroundChangerMain.class);
         startActivity(intent);
     }
 }
