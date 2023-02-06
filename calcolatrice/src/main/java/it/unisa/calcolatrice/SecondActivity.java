@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,21 +12,30 @@ import java.util.Random;
 
 public class SecondActivity extends AppCompatActivity implements View.OnClickListener {
 
-    RelativeLayout sfondo;
+    private TextView text;
+    RelativeLayout extLayout;
     Random rand = new Random();
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second);
-        findViewById(R.id.sium).setOnClickListener(this);
-        sfondo = findViewById(R.id.sfondo);
+
+        findViewById(R.id.sfondoTesto).setOnClickListener(this);
+        findViewById(R.id.sfondoApp).setOnClickListener(this);
+        text = findViewById(R.id.text);
+        extLayout = findViewById(R.id.extLayout);
     }
 
     @Override
     public void onClick(View v) {
-
         int r = rand.nextInt(256);
         int g = rand.nextInt(256);
         int b = rand.nextInt(256);
-        sfondo.setBackgroundColor(Color.rgb(r,g,b));
+        switch (v.getId()){
+            case R.id.sfondoApp:
+                extLayout.setBackgroundColor(Color.rgb(r,g,b));
+                break;
+            case R.id.sfondoTesto:
+                text.setBackgroundColor(Color.rgb(r,g,b));
+        }
     }
 }
