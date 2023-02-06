@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -86,7 +85,7 @@
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
                         android:text="C"
-                        android:textSize="10dp" />
+                        android:textSize="11dp" />
 
                     <Button
                         android:id="@+id/memoryClear"
@@ -95,9 +94,9 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
-                        android:layout_marginLeft="10sp"
+                        android:layout_marginStart="10sp"
                         android:text="MC"
-                        android:textSize="9dp" />
+                        android:textSize="11dp" />
 
                     <Button
                         android:id="@+id/memorySave"
@@ -106,9 +105,9 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
-                        android:layout_marginLeft="10sp"
+                        android:layout_marginStart="10sp"
                         android:text="MS"
-                        android:textSize="9dp" />
+                        android:textSize="11dp" />
 
                     <Button
                         android:id="@+id/memoryRecall"
@@ -117,9 +116,9 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
-                        android:layout_marginLeft="10sp"
+                        android:layout_marginStart="10sp"
                         android:text="MR"
-                        android:textSize="9dp" />
+                        android:textSize="11dp" />
 
                     <Button
                         android:id="@+id/subtract"
@@ -128,7 +127,7 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
-                        android:layout_marginLeft="10sp"
+                        android:layout_marginStart="10sp"
                         android:text="-" />
 
 
@@ -158,7 +157,7 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
-                        android:layout_marginLeft="10sp"
+                        android:layout_marginStart="10sp"
                         android:clickable="true"
                         android:text="8" />
 
@@ -169,7 +168,7 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
-                        android:layout_marginLeft="10sp"
+                        android:layout_marginStart="10sp"
                         android:clickable="true"
                         android:text="9" />
 
@@ -180,7 +179,7 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
-                        android:layout_marginLeft="10sp"
+                        android:layout_marginStart="10sp"
                         android:clickable="true"
                         android:text="/" />
 
@@ -201,7 +200,7 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
-                        android:layout_marginLeft="10sp"
+                        android:layout_marginStart="10sp"
                         android:text="5" />
 
                     <Button
@@ -211,7 +210,7 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
-                        android:layout_marginLeft="10sp"
+                        android:layout_marginStart="10sp"
                         android:clickable="true"
                         android:text="6" />
 
@@ -222,7 +221,7 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
-                        android:layout_marginLeft="10sp"
+                        android:layout_marginStart="10sp"
                         android:clickable="true"
                         android:text="*" />
 
@@ -243,7 +242,7 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
-                        android:layout_marginLeft="10sp"
+                        android:layout_marginStart="10sp"
                         android:clickable="true"
                         android:text="2" />
 
@@ -254,7 +253,7 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
-                        android:layout_marginLeft="10sp"
+                        android:layout_marginStart="10sp"
                         android:clickable="true"
                         android:text="3" />
 
@@ -265,7 +264,7 @@
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
-                        android:layout_marginLeft="10sp"
+                        android:layout_marginStart="10sp"
                         android:clickable="true"
                         android:text="+" />
 
@@ -290,24 +289,24 @@
                         android:text="0" />
 
                     <Button
-                        android:id="@+id/point"
+                        android:id="@+id/dot"
                         android:layout_width="20dp"
                         android:layout_height="wrap_content"
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
-                        android:layout_marginLeft="10sp"
+                        android:layout_marginStart="10sp"
                         android:clickable="true"
                         android:text="." />
 
                     <Button
-                        android:id="@+id/result"
+                        android:id="@+id/equal"
                         android:layout_width="20dp"
                         android:layout_height="wrap_content"
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
-                        android:layout_marginLeft="10sp"
+                        android:layout_marginStart="10sp"
                         android:clickable="true"
                         android:text="=" />
 
