@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BgChanger">
+
+    <RelativeLayout
+        android:id="@+id/extLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#FF0000"
+            android:text="clicca un pulsante"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/sfondoTesto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#123456"
+            android:text="Cambia sfondo del testo"
+            android:textSize="12sp"
+            android:onClick="toastMsg"
+            />
+
+        <Button
+            android:id="@+id/sfondoApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sfondoTesto"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#654321"
+            android:text="Cambia sfondo dell'app"
+            android:textSize="12sp"
+            android:onClick="toastMsg"
+            />
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

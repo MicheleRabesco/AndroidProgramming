@@ -16,3 +16,4 @@ rootProject.name = "AndroidProgramming"
 include ':firstApp'
 include ':calcolatrice'
 include ':fragments'
+include ':calculatorwithfragments'
