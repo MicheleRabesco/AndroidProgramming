@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/calcolatrice" />
             <option value="$PROJECT_DIR$/firstApp" />
+            <option value="$PROJECT_DIR$/fragments" />
           </set>
         </option>
       </GradleProjectSettings>

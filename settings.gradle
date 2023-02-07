@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "AndroidProgramming"
 include ':firstApp'
 include ':calcolatrice'
+include ':fragments'
