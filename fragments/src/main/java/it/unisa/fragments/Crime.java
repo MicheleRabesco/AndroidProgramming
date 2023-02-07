@@ -1,6 +1,8 @@
 package it.unisa.fragments;
 
-import java.util.Date;
+import static java.time.LocalDate.of;
+
+import java.time.LocalDate;
 import java.util.UUID;
 
 
@@ -8,11 +10,14 @@ public class Crime {
 
     private UUID id;
     private String title;
-    private Date date;
+    private LocalDate todayDate;
     private Boolean solved;
     public Crime() {
         id = UUID.randomUUID();
-        date = new Date();
+        String year = null;
+        String month = null;
+        String day = null;
+        todayDate = of(Integer.parseInt(year), Integer.parseInt(month), Integer.parseInt(day));
     }
 
     public UUID getId() {
@@ -27,12 +32,12 @@ public class Crime {
         this.title = title;
     }
 
-    public Date getDate() {
-        return date;
+    public LocalDate getDate() {
+        return todayDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDate(LocalDate date) {
+        todayDate = date;
     }
 
     public Boolean isSolved() {
