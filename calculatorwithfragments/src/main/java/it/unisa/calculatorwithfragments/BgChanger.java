@@ -1,5 +1,7 @@
 package it.unisa.calculatorwithfragments;
 
+import static android.widget.Toast.LENGTH_LONG;
+
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -43,19 +45,20 @@ public class BgChanger extends Fragment implements View.OnClickListener {
         switch (v.getId()){
             case R.id.sfondoApp:
                 extLayout.setBackgroundColor(Color.rgb(r,g,b));
-               // toastMsg();
+                toastMsg();
                 break;
             case R.id.sfondoTesto:
                 text.setBackgroundColor(Color.rgb(r,g,b));
-                //toastMsg();
+                toastMsg();
                 break;
 
         }
     }
-    /*
+
     public void toastMsg() {
-        Toast toast = Toast.makeText(this, "Cambiando colore..", Toast.LENGTH_LONG);
+        String msg = "Cambiando colore..";
+        Toast toast = Toast.makeText(getActivity(), msg, Toast.LENGTH_LONG);
         toast.show();
     }
-    */
+
 }
