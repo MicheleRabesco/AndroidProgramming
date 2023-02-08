@@ -7,7 +7,7 @@ public class Crime {
     private UUID mId;
     private String mTitle;
     private Date mDate;
-    private Boolean mSolved;
+    private boolean mSolved;
 
     public Crime() {
         mId = UUID.randomUUID(); //n easy way to generate universally unique ID values
@@ -38,7 +38,7 @@ public class Crime {
         return mSolved;
     }
 
-    public void setSolved(Boolean solved) {
+    public void setSolved(boolean solved) {
         this.mSolved = mSolved;
     }
 }
