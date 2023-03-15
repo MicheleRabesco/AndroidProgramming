@@ -1,6 +1,7 @@
 package it.unisa.rubrica;
 
 import android.content.Context;
+import android.location.GnssAntennaInfo;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -42,11 +44,10 @@ public class CustomAdapter extends ArrayAdapter<Contatto> {
         Button phoneButton;
         ImageButton imageButton;
 
-        nameButton = (Button) v.findViewById(R.id.onClickName);
-        surnameButton = (Button) v.findViewById(R.id.onClickSurname);
-        phoneButton = (Button) v.findViewById(R.id.onClickPhone);
-        imageButton = (ImageButton) v.findViewById(R.id.onClickImg);
-
+        nameButton = v.findViewById(R.id.onClickName);
+        surnameButton = v.findViewById(R.id.onClickSurname);
+        phoneButton = v.findViewById(R.id.onClickPhone);
+        imageButton = v.findViewById(R.id.onClickImg);
 
         nameButton.setText(c.getName());
         surnameButton.setText(c.getSurname());
@@ -57,6 +58,7 @@ public class CustomAdapter extends ArrayAdapter<Contatto> {
         surnameButton.setTag(position);
         phoneButton.setTag(position);
         imageButton.setTag(position);
+
 
         return v;
     }

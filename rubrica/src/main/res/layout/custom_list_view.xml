@@ -32,7 +32,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:onClick="onNameClick"/>
 
                 <Button
                     android:id="@+id/onClickSurname"
@@ -40,7 +41,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:onClick="onSurnameClick"/>
             </LinearLayout>
 
             <Button
@@ -48,7 +50,8 @@
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Button"
+                android:onClick="onPhoneClick"/>
         </LinearLayout>
 
         <ImageButton
@@ -56,6 +59,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@tools:sample/avatars"
+            android:onClick="onPhotoClick"/>
     </LinearLayout>
 </RelativeLayout>
